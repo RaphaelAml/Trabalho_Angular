@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+  <span>Realizar Cadastro</span>
+</mat-toolbar>
+
+<mat-card>
+  
+  <mat-card-content>
+    <form>
+      <mat-toolbar color="primary">
+        <span>Cadastro de Cliente</span>
+      </mat-toolbar>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Digite o nome">
+      </mat-form-field>
+
+   
+      <mat-form-field appearance="fill">
+        <mat-label>Idade</mat-label>
+        <input matInput placeholder="Digite a Idade" type="number">
+      </mat-form-field>
+
+ 
+      <mat-form-field appearance="fill">
+        <mat-label>Estado</mat-label>
+        <mat-select>
+          <mat-option value="padrao">Paraná</mat-option>
+          <mat-option value="express">Santa Catarina</mat-option>
+          <mat-option value="agendada">Rio Grande do Sul</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+ 
+      <div class="button-container">
+        <button mat-raised-button color="primary">Salvar</button>
+        <button mat-raised-button color="warn" style="margin-left: 10px;">Cancelar</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
